@@ -8,6 +8,7 @@
     --nav-height:33px;
     --header-height:120px;
     --header-with-search-height:calc(var(--header-height) - var(--nav-height));
+    --header__sort-bar : 46px;
 }
 *{
     box-sizing: inherit;
@@ -19,14 +20,7 @@ html{
     box-sizing: border-box;
 }
 /* responsive */
-.grid{
-    width: 1280px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
+
 .grid__row{
     display: flex;
     flex-wrap: wrap;
@@ -194,10 +188,12 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
 }
 .pagination-item{
     list-style: none;
     margin: 0 1.4rem;
+    
 }
 .pagination-item--active:hover .pagination-item__link{
     opacity: 0.9;
@@ -267,7 +263,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 1.6rem;
+    padding-left: 1.6rem;
 }
 .footer__dowload-apps-link{
     text-decoration: none;
@@ -279,6 +275,7 @@ html{
 .footer__pay{
     max-width: 18.2rem;
     height: 9.6rem;
+    margin-bottom: 4rem;
 }
 .footer__pay img{
     width: 100%;
@@ -289,10 +286,11 @@ html{
     text-transform: uppercase;
     color: rgba(0,0,0,.54);
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 1.3rem;
 }
 .footer__transport{
     max-width: 19rem;
+
 }
 .footer__transport-img{
     width: 100%;
