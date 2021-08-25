@@ -140,4 +140,7 @@
     .footer__dowload-qr-link{
         padding-left: 1.6rem;
     }
+    .home-product-item__sale-off{
+        height: 4.8rem;
+    }
 }
